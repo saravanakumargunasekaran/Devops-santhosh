@@ -1,0 +1,23 @@
+#!/bin/bash
+
+host="/home/sara/hostIp"
+
+for ip in $( cat$host )
+do
+	ping -cl $ip &> /dev/null
+	if ( $? -eq 0) 
+	then
+	echo $ip ok
+	else
+	echo $ip Not ok
+	fi
+done
+
+
+google.com
+
+filename = pingscript.sh
+run = ./pingscript.sh
+filter cmd = ./pingscript.sh | grep -i not
+
+

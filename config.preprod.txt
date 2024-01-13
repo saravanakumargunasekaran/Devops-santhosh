@@ -1,0 +1,2 @@
+ConnectionStrings__ConnectionString="server=mysql-db-nonprod.c3lqyh5u03b2.eu-central-1.rds.amazonaws.com;database=betaglamzdb;user=glamzwrite;password=glamzwrite2023!"
+DataSync__B2BUrl="https://dev.glamzbusiness.com"

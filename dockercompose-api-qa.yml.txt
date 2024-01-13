@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  nocom:
+    container_name: glamz-b2c-beta
+    hostname: glamz-b2c
+    image: "921767380521.dkr.ecr.eu-central-1.amazonaws.com/glamz-b2c:IMAGE_TAG"
+    restart: always
+    env_file: "config/.env-qa"
+    ports:
+      - "9008:80"
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '5'

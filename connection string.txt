@@ -1,0 +1,5 @@
+config.env-prod:
+ConnectionStrings__ConnectionString="server=mysql-db-nonprod.c3lqyh5u03b2.eu-central-1.rds.amazonaws.com;database=betaglamzb2c;allowuservariables=True;user id=admin;password=glamz123"
+config.env-qa
+ConnectionStrings__ConnectionString="server=mysql-db-nonprod.c3lqyh5u03b2.eu-central-1.rds.amazonaws.com;database=qaglamzb2c;allowuservariables=True;user id=admin;password=glamz123"
+DataSync__B2BUrl="https://qa.glamzbusiness.com"

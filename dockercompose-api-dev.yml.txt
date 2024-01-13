@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  nocom:
+    container_name: glamz-b2c-beta
+    hostname: glamz-b2c
+    image: "192.168.0.136:8083/styles:$GIT_SHORT_COMMIT"
+    restart: always
+    env_file: "config/.env-dev"
+    ports:
+      - "9008:80"
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '5'
